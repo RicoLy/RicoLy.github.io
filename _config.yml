@@ -7,14 +7,14 @@ kramdown:
 
 # 作者信息
 author:
-  name: Golang
+  name: Eric Zhou
   email: dejavuzhou@qq.com
   link: http://captcha.mojotv.cn
   weibo: http://weibo.com/u/2706451481?is_all=1
   github: http://github.com/dejavuzhou
 
 # 站点信息
-title: Golang's blog
+title: Eric Zhou's blog
 description: awesomeness & legendery
 url: http://bettercalleric.lofter.com
 rss_url: /pages/atom.xml
@@ -31,3 +31,7 @@ ga:
 # disqus 设置
 disqus:
   shortname: suyan-zh
+
+categories: Golang Raft Python Database Docker Tool
+
+exclude: util config
