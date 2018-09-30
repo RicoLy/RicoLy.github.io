@@ -1,0 +1,33 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+pygments: true
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author:
+  name: Golang
+  email: dejavuzhou@qq.com
+  link: http://captcha.mojotv.cn
+  weibo: http://weibo.com/u/2706451481?is_all=1
+  github: http://github.com/dejavuzhou
+
+# 站点信息
+title: Golang's blog
+description: awesomeness & legendery
+url: http://bettercalleric.lofter.com
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: https://upload.wikimedia.org/wikipedia/en/thumb/7/77/EricCartman.png/220px-EricCartman.png
+favicon: https://upload.wikimedia.org/wikipedia/en/thumb/7/77/EricCartman.png/220px-EricCartman.png
+
+# google analytics 设置
+ga:
+  id: UA-54767140-1
+  url: yansu.org
+
+# disqus 设置
+disqus:
+  shortname: suyan-zh

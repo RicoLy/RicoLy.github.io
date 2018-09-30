@@ -1,1 +1,6 @@
 _site/
+_drafts/
+.DS_Store
+.idea/
+config/*.go
+config/env.go
