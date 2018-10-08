@@ -17,7 +17,7 @@ description: Raft协议详解
 一致性协议通常基于`replicated state machines`，即所有结点都从同一个state出发，都经过同样的一些操作序列（`log`），最后到达同样的`state`。
 
 ### 架构
-![架构](/assets/image/framwork.jpg)
+![架构](/assets/image/framework.jpg)
 系统中每个结点有三个组件：
 
 状态机: 当我们说一致性的时候，实际就是在说要保证这个状态机的一致性。
@@ -68,7 +68,7 @@ Raft协议的每个副本都会处于三种状态之一：Leader、Follower、Ca
 
 - 当一个新的Leader被选出来时，它的日志和其它的Follower的日志可能不一样，这个时候，就需要一个机制来保证日志的一致性。一个新leader产生时，集群状态可能如下：
     
-    ![集群状态可能如下](/assets/image/raft_leader.jpg}})
+    ![集群状态可能如下](/assets/image/raft_leader.jpg)
 
     最上面这个是新Leader，a~f是Follower，每个格子代表一条log entry，格子内的数字代表这个log entry是在哪个term上产生的。
     
@@ -146,14 +146,14 @@ Raft使用的方案是：每个副本独立的对自己的系统状态进行Snap
     这是因为，如果直接这么简单粗暴的来做的话，可能会产生多主。简单说明下：
 
     假设Cold为拓扑为(S1, S2, S3)，且S1为当前的Leader，如下图：
-![](/assets/image/raft_leader_s1.jpg}})
+![](/assets/image/raft_leader_s1.jpg)
 
     假如此时变更了系统配置，将集群范围扩大为5个，新增了S4和S5两个服务节点，这个消息被分别推送至S2和S3，但是假如只有S3收到了消息并处理，S2尚未得到该消息
-![](/assets/image/raft_leader_s2.jpg}})
+![](/assets/image/raft_leader_s2.jpg)
 
 
     这时在S2的眼里，拓扑依然是<S1, S2, S3>，而在S3的眼里拓扑则变成了<S1, S2, S3, S4, S5>。假如此时由于某种原因触发了一次新的选主，S2和S3分别发起选主的请求：
     
-![](/assets/image/raft_leader_s3.jpg}})
+![](/assets/image/raft_leader_s3.jpg)
 
     最终，候选者S2获得了S1和S2自己的赞成票，那么在它眼里，它就变成了Leader，而S3获得了S4、S5和S3自己的赞成票，在它眼里S3也变成了Leader，那么多Leader的问题就产生了。而产生该问题的最根本原因是S2和S3的系统视图不一致。
