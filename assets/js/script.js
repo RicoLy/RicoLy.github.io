@@ -117,9 +117,9 @@ function afterPjax() {
 
     // Lazy Loading Disqus
     // http://jsfiddle.net/dragoncrew/SHGwe/1/
-    var ds_loaded = false,
-        top = $('#disqus_thread').offset().top;
-    window.disqus_shortname = $('#disqus_thread').attr('name');
+    var ds_loaded = false;
+    //top = $('#disqus_thread').offset().top;
+    //window.disqus_shortname = $('#disqus_thread').attr('name');
 
     function check() {
         if (!ds_loaded && container.scrollTop() + container.height() > top) {
@@ -137,5 +137,5 @@ function afterPjax() {
     container.scroll(check);
 }
 
-afterPjax();
+//afterPjax();
 
