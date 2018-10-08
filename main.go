@@ -40,9 +40,9 @@ func createCmds() []util.Cmd {
 
 func main() {
 	for {
-		if err := util.SpiderHackNews(); err != nil {
-			log.Fatal(err)
-		}
+		//if err := util.SpiderHackNews(); err != nil {
+		//	log.Fatal(err)
+		//}
 		if err := util.ParseMarkdownHacknews(); err != nil {
 			log.Fatal(err)
 		}
