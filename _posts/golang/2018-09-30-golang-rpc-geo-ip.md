@@ -1,6 +1,6 @@
 ---
 layout: post
-title: golang解析IP到城市jsonRPC服务教程
+title: golang解析IP到城市jsonRPC
 category: Golang
 tags: Golang,RPC
 description: Golang geoIP RPC
