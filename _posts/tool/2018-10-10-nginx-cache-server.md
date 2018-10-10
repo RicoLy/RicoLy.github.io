@@ -50,8 +50,10 @@ location ~ .*\.(js|css|gif|jpg|jpeg|png|bmp|swf|flv|html|htm)$ {
     proxy_cache_key  ——其会根据这个key映射成一个hash值，然后存入到本地文件中，如果你设置的proxy_cache_key为$host$uri 那么无论后面跟的什么参数，都会访问一个文件，不会再生成新的文件。
     而如果proxy_cache_key设置了$is_args$args，那么传入的参数 localhost/index.php?a=4 与localhost/index.php?a=44将映射成两个不同hash值的文件。
     proxy_cache_valid  ——配置nginx cache中的缓存文件的缓存时间，如果配置项为：proxy_cache_valid 200 304 2m;说明对于状态为200和304的缓存文件的缓存时间是2分钟，两分钟之后再访问该缓存文件时，文件会过期，从而去源服务器重新取数据。any表示其他所有
+
 #### 完整http域：
-```
+
+```yaml
 http {
     include       mime.types;
     default_type  application/octet-stream;
@@ -131,8 +133,8 @@ http {
     }
 }
 ```
-### Win环境下
 
+### Win环境下
  Win环境下的设置基本相同，唯一需要注意的就是路径问题，例如缓存位置设置如下的话：
 ```
 proxy_cache_path /nginx/cache levels=1:2 keys_zone=cache_one:500m inactive=10d max_size=10g;
