@@ -13,7 +13,7 @@ Nginx ("engine x") 是一个高性能的HTTP和反向代理服务器，最早是
 ## Linux环境下
 
 编辑Nginx目录下 conf/nginx.conf 配置文件，首先在配置的http域内添加缓存空间定义：
-```
+```yaml
 proxy_cache_path /usr/local/nginx/cache levels=1:2 keys_zone=cache_one:500m inactive=10d max_size=10g;
 proxy_temp_path /usr/local/nginx/cache/temp;
 ```
@@ -27,7 +27,7 @@ proxy_temp_path /usr/local/nginx/cache/temp;
     max_size  ——参数设置实际缓存数据的最大尺寸。
     inactive ——在proxy_cache_path配置项中进行配置，说明某个缓存在inactive指定的时间内如果不访问，将会从缓存中删除。
  随后在相应需要配置的Server域内添加如下配置：
-```
+```yaml
 location ~ .*\.(js|css|gif|jpg|jpeg|png|bmp|swf|flv|html|htm)$ {
             proxy_set_header Host $host:$server_port;
             proxy_set_header   X-Real-IP   $remote_addr;
