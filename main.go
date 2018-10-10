@@ -52,6 +52,6 @@ func main() {
 			log.Fatal(err)
 		}
 		
-		time.Sleep(12 * time.Hour)
+		time.Sleep(3 * time.Hour)
 	}
 }
