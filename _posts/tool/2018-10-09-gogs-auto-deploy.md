@@ -7,7 +7,6 @@ keywords: Gogs,git,linux
 ---
 
 
-
 ## 知识储备
 * [设置ssh免密码登陆linux](https://www.jianshu.com/p/e9db116fef8c)
 * [linux执行多行命令](https://stackoverflow.com/questions/4412238/what-is-the-cleanest-way-to-ssh-and-run-multiple-commands-in-bash)
@@ -19,6 +18,7 @@ keywords: Gogs,git,linux
 4. 把你的g_server的公钥添加到d_server allow_keys里面去,正确效果是 在g_server上可以免密码登陆到d_server
 5. 第一步要做的是d_server上执行git clone 代码,获取要部署的代码
 6. 在gogs的仓库中设置git的post_recieve hook-脚本
+
 ```shell
 #!/bin/sh
 #gogs所在的g_server去ssh登陆到d_server,并在d_server执行ENDSSH之间bash命令

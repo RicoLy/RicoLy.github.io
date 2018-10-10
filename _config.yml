@@ -1,9 +1,9 @@
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
-pygments: true
-
-kramdown:
-  input: GFM
+highlighter: rouge
+mathjax: disabled
+sass:
+  style: compressed
 
 # 作者信息
 author:
