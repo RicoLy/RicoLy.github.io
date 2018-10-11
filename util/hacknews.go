@@ -72,10 +72,15 @@ func SpiderHackNews() error {
 func fetchRedisDataHackNews() ([]NewsItem, error) {
 	skey := time.Now().Format("hacknews:2006-01-02")
 	urls, err := RedisClient.SMembers(skey).Result()
+	if err != nil {
+		return nil, err
+	}
 	hkey := time.Now().Format("hacknews:2006-01")
 	
 	jsonStrings, err := RedisClient.HMGet(hkey, urls...).Result()
-	
+	if err != nil {
+		return nil, err
+	}
 	newsItems := []NewsItem{}
 	for _, item := range jsonStrings {
 		if string, ok := item.(string); ok {
@@ -99,6 +104,9 @@ func ParseMarkdownHacknews() error {
 	defer file.Close()
 	
 	newsItems, err := fetchRedisDataHackNews()
+	if err != nil {
+		return err
+	}
 	data := struct {
 		Day  string
 		List []NewsItem

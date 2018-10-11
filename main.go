@@ -44,12 +44,12 @@ func main() {
 		//	log.Fatal(err)
 		//}
 		if err := util.ParseMarkdownHacknews(); err != nil {
-			log.Fatal(err)
+			log.Println(err)
 		}
 		
 		_, err := util.RunCmds(createCmds())
 		if err != nil {
-			log.Fatal(err)
+			log.Println(err)
 		}
 		
 		time.Sleep(3 * time.Hour)
