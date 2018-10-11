@@ -75,6 +75,9 @@ func fetchRedisDataHackNews() ([]NewsItem, error) {
 	if err != nil {
 		return nil, err
 	}
+	if urls == nil {
+		return nil, errors.New("爬虫没有内容")
+	}
 	hkey := time.Now().Format("hacknews:2006-01")
 	
 	jsonStrings, err := RedisClient.HMGet(hkey, urls...).Result()
