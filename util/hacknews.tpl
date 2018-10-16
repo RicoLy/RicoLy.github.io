@@ -4,7 +4,6 @@ title: Hacknews{{.Day}}新闻
 category: Hacknews
 tags: hacknews
 keywords: hacknews
-description: {{.Day}}
 ---
 
 
