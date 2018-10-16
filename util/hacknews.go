@@ -96,6 +96,15 @@ func fetchRedisDataHackNews() ([]NewsItem, error) {
 	return newsItems, err
 }
 func ParseMarkdownHacknews() error {
+	
+	newsItems, err := fetchRedisDataHackNews()
+	if err != nil {
+		return err
+	}
+	if len(newsItems) < 1 {
+		return nil
+	}
+	
 	tmpl, err := template.ParseFiles("util/hacknews.tpl") //解析模板文件
 	day := time.Now().Format("2006-01-02")
 	mdFile := fmt.Sprintf("_posts/hacknews/%s-hacknews.md", day)
@@ -106,10 +115,6 @@ func ParseMarkdownHacknews() error {
 	}
 	defer file.Close()
 	
-	newsItems, err := fetchRedisDataHackNews()
-	if err != nil {
-		return err
-	}
 	data := struct {
 		Day  string
 		List []NewsItem
