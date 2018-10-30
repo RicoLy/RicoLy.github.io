@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 快速掌握 Golang context 包，简单示例
+title: 快速掌握 Golang context
 category: Golang
 tags: Golang,context
 description: Golang context
@@ -10,14 +10,14 @@ description: Golang context
 
 **预览目录**
 
-*   [Context 原理](#toc_0)
-*   [遵循规则](#toc_1)
-*   [Context 包](#toc_2)
-*   [WithCancel 例子](#toc_3)
-*   [WithDeadline 例子](#toc_4)
-*   [WithTimeout 例子](#toc_5)
-*   [WithValue 例子](#toc_6)
-*   [参考连接](#toc_7)
+*   [Context 原理](#Context 原理)
+*   [遵循规则](#遵循规则)
+*   [Context 包]()
+*   [WithCancel 例子]()
+*   [WithDeadline 例子]()
+*   [WithTimeout 例子]()
+*   [WithValue 例子]()
+*   [参考连接]()
 
 
 
