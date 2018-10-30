@@ -1,12 +1,12 @@
 ---
 layout: post
-title: golang JSON TIPs
+title: golang-JSON技巧
 category: Golang
-tags: Golang,JSON
+tags: Golang
 description:golang json tips
 ---
-# 目录 [−]
 
+### 目录 [−]
 1.  [临时忽略struct空字段](#临时忽略struct空字段)
 2.  [临时添加额外的字段](#临时添加额外的字段)
 3.  [临时粘合两个struct](#临时粘合两个struct)
@@ -25,7 +25,6 @@ description:golang json tips
 16.  [忽略掉一些字段](#忽略掉一些字段)
 17.  [忽略掉一些字段2](#忽略掉一些字段2)
 
-[taowen](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Ftaowen)是[json-iterator](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fjson-iterator%2Fgo)的作者。 序列化和反序列化需要处理JSON和struct的关系，其中会用到一些技巧。 原文 [Golang 中使用 JSON 的小技巧](https://link.juejin.im?target=http%3A%2F%2Fjsoniter.com%2Fgo-tips.cn.html)是他的经验之谈，介绍了一些struct解析成json的技巧，以及 json-iterator 库的一些便利的处理。
 
 有的时候上游传过来的字段是string类型的，但是我们却想用变成数字来使用。 本来用一个json:",string" 就可以支持了，如果不知道golang的这些小技巧，就要大费周章了。
 
