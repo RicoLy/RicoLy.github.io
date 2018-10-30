@@ -6,7 +6,6 @@ tags: Golang,RPC,Protobuf, gRPC
 description: Golang gRPC RPC protobuf
 ---
 
-<div class="article">
 
 # gRPC初体验
 
