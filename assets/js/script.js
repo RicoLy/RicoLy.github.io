@@ -12,7 +12,7 @@ if ($(window).width() <= 1280) {
 // Search
 $('#search-input').on('input', function (e) {
     var blogs = $(".pl__all").filter(function () {
-        var reg = new RegExp(e.target.val(), "i");
+        var reg = new RegExp(e.target.value, "i");
         return reg.test($(this).text());
     });
     $(".pl__all").fadeOut(200)
