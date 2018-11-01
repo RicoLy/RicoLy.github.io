@@ -1190,7 +1190,7 @@ pre {
     padding: 1em;
     font: .9em/1.5 Consolas, Monaco, 'Andale Mono', monospace;
     border: 1px solid #e5e8ec;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     background-color: #fdfdfd;
     background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
     background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
@@ -1233,8 +1233,7 @@ pre > code {
 /* Inline code */
 :not(pre) > code {
     padding: .25em .5em .1em;
-    color: #e91e63;
-!important;
+    color: #e91e63 !important;
     font: .85em Consolas, Monaco, 'Andale Mono', monospace;
     background: #fafafa;
     border: 1px solid #e5e8ec;
