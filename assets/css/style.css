@@ -805,7 +805,7 @@ iframe {
 }
 
 #pjax.fullscreen {
-    max-width: 75%;
+    min-width: 80%;
     margin: 0 auto;
 }
 
