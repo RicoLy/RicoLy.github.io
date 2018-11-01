@@ -15,7 +15,7 @@ $('#search-input').on('input', function (e) {
         var reg = new RegExp(e.target.value, "i");
         return reg.test($(this).text());
     });
-    $(".pl__all").fadeOut(200)
+    $(".pl__all").hide();
     blogs.fadeIn(350);
 });
 // Variables
