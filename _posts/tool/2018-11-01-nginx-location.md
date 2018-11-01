@@ -1,6 +1,6 @@
 ---
 layout: post
-title: location的修饰符的作用以及优先级顺序
+title: nginx配置之location
 category: Tool
 tags: Nginx
 keywords: Nginx location settings
