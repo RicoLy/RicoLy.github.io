@@ -327,7 +327,7 @@ a {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    cursor: not-allowed;
+    /*cursor: not-allowed;*/
 }
 
 #search-input::-webkit-input-placeholder {
