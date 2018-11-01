@@ -7,7 +7,7 @@
 // Detect window size, if less than 1280px add class 'mobile' to sidebar therefore it will be auto hide when trigger the pjax request in small screen devices.
 if ($(window).width() <= 1280) {
     $('#sidebar').addClass('mobile fullscreen')
-    $('#js-fullscreen').addClass('fullscreen');
+    $('icon-arrow').addClass('fullscreen')
 }
 
 // Variables
