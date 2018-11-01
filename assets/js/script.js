@@ -9,7 +9,15 @@ if ($(window).width() <= 1280) {
     $('#sidebar').addClass('mobile fullscreen')
     $('icon-arrow').addClass('fullscreen')
 }
-
+// Search
+$('#search-input').on('input', function (e) {
+    var blogs = $(".pl__all").filter(function () {
+        var reg = new RegExp($('#search-input').val(), "i");
+        return reg.test($(this).text());
+    });
+    toc.hide();
+    blogs.fadeIn(350);
+});
 // Variables
 var sidebar = $('#sidebar'),
     container = $('#post'),
