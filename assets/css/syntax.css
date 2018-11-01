@@ -5,8 +5,8 @@
 
 .highlighter-rouge {
     color: #c5c8c6;
-    margin: 0 auto 2em auto;
-    max-width: 56.25rem;
+    margin: 0 auto 1em auto;
+    /*max-width: 56.25rem;*/
 }
 
 .highlighter-rouge .c {

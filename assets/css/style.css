@@ -1186,19 +1186,6 @@ iframe {
     animation: spin 400ms linear infinite;
 }
 
-/*!-------------------------------------
- * Syntax Colours
- * https://gist.github.com/edwardhotchkiss/2005058
- *
- * Theme based on prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
- * @author Tim  Shedor
- * ------------------------------------- */
-/*! Modified by Peiwen Lu @ 30 Nov 2013 */
-/* Code blocks */
-.highlight {
-    margin: 1.715em 0;
-}
-
 pre {
     padding: 1em;
     font: .9em/1.5 Consolas, Monaco, 'Andale Mono', monospace;
