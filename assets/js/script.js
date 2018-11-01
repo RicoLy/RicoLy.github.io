@@ -12,10 +12,10 @@ if ($(window).width() <= 1280) {
 // Search
 $('#search-input').on('input', function (e) {
     var blogs = $(".pl__all").filter(function () {
-        var reg = new RegExp("golang", "i");
+        var reg = new RegExp(e.target.val(), "i");
         return reg.test($(this).text());
     });
-    $(".pl__all").hide();
+    $(".pl__all").fadeOut(200)
     blogs.fadeIn(350);
 });
 // Variables
