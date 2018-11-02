@@ -1204,11 +1204,11 @@ pre {
 }
 
 pre::-webkit-scrollbar {
-    height: 7px;
+    height: 3px;
 }
 
 pre::-webkit-scrollbar-thumb {
-    background: #e5e8ec;
+    background: #ffffff59;
 }
 
 pre::-webkit-scrollbar-thumb:hover {
