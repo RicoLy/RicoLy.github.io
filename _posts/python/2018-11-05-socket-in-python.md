@@ -1,11 +1,23 @@
 ---
 layout: post
-title: Socket in Python
+title: TCP/UDP/SOCKET in Python
 category: Python
 tags: python
 keywords: python
 description: socket 网络通讯
 ---
+
+### 网络通信协议TCP UDP SOCKET
+- `IP`：网络层协议；
+- `TCP`和`UDP`：传输层协议；
+- `HTTP`：应用层协议；
+- `SOCKET`：`TCP`/`IP`网络的`API`。
+- `TCP`/`IP`代表传输控制协议/网际协议，指的是一系列协议。
+- `TCP`和`UDP`使用`IP`协议从一个网络传送数据包到另一个网络。把`IP`想像成一种高速公路，它允许其它协议在上面行驶并找到到其它电脑的出口。`TCP`和`UDP`是高速公路上的“卡车”，它们携带的货物就是像`HTTP`，文件传输协议`FTP`这样的协议等。
+- `TCP`和`UDP`是`FTP`，`HTTP`和`SMTP`之类使用的传输层协议。虽然`TCP`和`UDP`都是用来传输其他协议的，它们却有一个显著的不同：TCP提供有保证的数据传输，而`UDP`不提供。这意味着`TCP`有一个特殊的机制来确保数据安全的不出错的从一个端点传到另一个端点，而`UDP`不提供任何这样的保证。
+- `HTTP`(超文本传输协议)是利用`TCP`在两台电脑(通常是`Web`服务器和客户端)之间传输信息的协议。客户端使用Web浏览器发起`HTTP`请求给`Web`服务器，`Web`服务器发送被请求的信息给客户端。
+记住，需要IP协议来连接网络;`TCP`是一种允许我们安全传输数据的机制，，使用`TCP`协议来传输数据的`HTTP`是`Web`服务器和客户端使用的特殊协议。
+- `Socke`t 接口是`TCP`/`IP`网络的`API`，`Socket`接口定义了许多函数或例程，用以开发`TCP`/`IP`网络上的应用程序。
 
 ### 何谓socket
 
