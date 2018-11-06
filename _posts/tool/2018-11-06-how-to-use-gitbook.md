@@ -26,8 +26,8 @@ GitBook 是一个基于 Node.js 的命令行工具，下载安装 [Node.js](http
 - 使用淘宝源安装`gitbook`(针对墙内用户)
     1. ([快速安装淘宝源npm](https://npm.taobao.org/),`npm install -g cnpm --registry=https://registry.npm.taobao.org`)
     2. `cnpm install gitbook-cli -g`,淘宝npm源在墙内安装速度会更快.
-
 安装完成之后，使用`gitbook -V`来检测gitbook安装是否成功.
+
 ![](/assets/image/gitbook02.jpg)
 
 更多详情请参照 [GitBook 安装文档](http://www.chengweiyang.cn/gitbook/installation/README.html)
