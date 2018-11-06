@@ -59,10 +59,11 @@ gitbook init
 ### book.json
 
 该文件主要用来存放配置信息，我先放出我的配置文件。
+```javascript
     {
-        "title": "Blankj's Glory",
-        "author": "Blankj",
-        "description": "select * from learn",
+        "title": "标题",
+        "author": "作者",
+        "description": "描述简介",
         "language": "zh-hans",
         "gitbook": "3.2.3",
         "styles": {
@@ -146,51 +147,10 @@ gitbook init
             }
         }
     }
-    复制代码
+```
 
-相信很多节点自己也能猜到是什么意思，我还是简单介绍下吧。
 
-#### title
 
-本书标题
-
-#### author
-
-本书作者
-
-#### description
-
-本书描述
-
-#### language
-
-本书语言，中文设置 "zh-hans" 即可
-
-#### gitbook
-
-指定使用的 GitBook 版本
-
-#### styles
-
-自定义页面样式
-
-#### structure
-
-指定 Readme、Summary、Glossary 和 Languages 对应的文件名
-
-#### links
-
-在左侧导航栏添加链接信息
-
-#### plugins
-
-配置使用的插件
-
-#### pluginsConfig
-
-配置插件的属性
-
-### SUMMARY.md
 
 这个文件主要决定 GitBook 的章节目录，它通过 Markdown 中的列表语法来表示文件的父子关系，下面是一个简单的示例：
 ```
@@ -243,7 +203,6 @@ GitBook 有 [插件官网](https://plugins.gitbook.com/)，默认带有 5 个插
     "plugins": [
         "-search"
     ]
-    复制代码
 
 如果要配置使用的插件可以在 book.json 文件中加入即可，比如我们添加 [plugin-github](https://plugins.gitbook.com/)，我们在 book.json 
 中加入配置如下即可：
@@ -256,7 +215,6 @@ GitBook 有 [插件官网](https://plugins.gitbook.com/)，默认带有 5 个插
             }
         }
     }
-    复制代码
 
 然后在终端输入 `gitbook install ./` 即可。
 
