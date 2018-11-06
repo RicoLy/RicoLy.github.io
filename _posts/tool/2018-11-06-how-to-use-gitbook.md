@@ -12,7 +12,7 @@ keywords: gitbook 安装使用教程,node,npm
 
 ## GitBook 准备工作
 
-### 熟悉`[markdown`语法教程](http://www.markdown.cn/)
+### 熟悉[`markdown`语法教程](http://www.markdown.cn/)
 
 ### 安装 Node.js
 GitBook 是一个基于 Node.js 的命令行工具，下载安装 [Node.js](https://nodejs.org/en)，安装完成之后，你可以使用下面的命令来检验是否安装成功。
