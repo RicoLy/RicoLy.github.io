@@ -451,7 +451,7 @@ a {
 #post {
     height: 100%;
     color: #2c353d;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
     background: white;
     overflow-x: hidden;
@@ -510,7 +510,23 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+h5 {
     font-weight: 400;
 }
 
