@@ -510,6 +510,9 @@ a {
     }
 }
 
+h2, h3, h4, h5, h6 {
+    color: #FF5722;
+}
 h1 {
     font-weight: 800;
 }
@@ -517,7 +520,6 @@ h1 {
 h2 {
     font-weight: 700;
 }
-
 h3 {
     font-weight: 600;
 }
