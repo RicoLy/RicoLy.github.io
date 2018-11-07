@@ -15,7 +15,7 @@ TOML 的目标是成为一个极简的配置文件格式。TOML 被设计成可�
 
 ## 例子
 
-```toml
+```yml
 
 [owner]
 name = "Tom Preston-Werner"
@@ -44,14 +44,14 @@ enabled = true
 data = [ ["gamma", "delta"], [1, 2] ]
 ```
 # 在数组里换行没有关系。
-```toml
+```yml
 hosts = [
   "alpha",
   "omega"
 ]
 ```
 
-```toml
+```yml
 
     title = "TOML 例子"
 
@@ -93,7 +93,7 @@ TOML 是大小写敏感的。
 
 使用 `#` 表示注释：
 
-```toml
+```yml
     # I am a comment. Hear me roar. Roar.
     key = "value" # Yeah, you can do this.
 ```
@@ -103,12 +103,12 @@ TOML 是大小写敏感的。
 
 注释以引号包裹，里面的字符必须是　UTF-8 格式。引号、反斜杠和控制字符（U+0000 到 U+001F）需要转义。
 
-```toml
+```yml
 
     "I'm a string. \"You can quote me\". Name\tJos\u00E9\nLocation\tSF."
 ```
 常用的转义序列：
-```toml
+```yml
 
 \t     - tab             (U+0009)
 \n     - linefeed        (U+000A)
@@ -119,7 +119,7 @@ TOML 是大小写敏感的。
 \\     - backslash       (U+005C)
 \uXXXX - unicode         (U+XXXX)
 ```
-```toml
+```yml
 
     \b     - backspace       (U+0008)
     \t     - tab             (U+0009)
@@ -132,7 +132,7 @@ TOML 是大小写敏感的。
     \uXXXX - unicode         (U+XXXX)
 ```
 使用保留的特殊字符，TOML　会抛出错误。例如，在　Windows 平台上，应该使用两个反斜杠来表示路径：
-```toml
+```yml
 
     wrong = "C:\Users\nodejs\templates" # 注意：这不会生成合法的路径。
     right = "C:\\Users\\nodejs\\templates"
@@ -147,7 +147,7 @@ TOML 是大小写敏感的。
 
 浮点数带小数点。小数点两边都有数字。64位精度。
 
-```toml
+```yml
 
 
     3.1415
@@ -157,7 +157,7 @@ TOML 是大小写敏感的。
 
 布尔值永远是小写。
 
-```toml
+```yml
     true
     false
 ```
@@ -165,20 +165,20 @@ TOML 是大小写敏感的。
 
 使用　ISO 8601　完整格式。
 
-```toml
+```yml
     1979-05-27T07:32:00Z
 ```
 ## 　数组
 
 数组使用方括号包裹。空格会被忽略。元素使用逗号分隔。注意，不允许混用数据类型。
-```toml
+```yml
 
 [ "red", "yellow", "green" ]
 [ [ 1, 2 ], [3, 4, 5] ]
 [ [ 1, 2 ], ["a", "b", "c"] ] # 这是可以的。
 [ 1, 2.0 ] # 注意：这是不行的。
 ```
-```toml
+```yml
 
     [ 1, 2, 3 ]
     [ "red", "yellow", "green" ]
@@ -191,32 +191,32 @@ TOML 是大小写敏感的。
 ## 表格
 
 表格（也叫哈希表或字典）是键值对的集合。它们在方括号内，自成一行。注意和数组相区分，数组只有值。
-```toml
+```yml
     [table]
 ```
 在此之下，直到下一个　table 或　EOF 之前，是这个表格的键值对。键在左，值在右，等号在中间。键以非空字符开始，以等号前的非空字符为结尾。键值对是无序的。
-```toml
+```yml
     [table]
     key = "value"
 ```
 你可以随意缩进，使用 Tab 或空格。为什么要缩进呢？因为你可以嵌套表格。
 
 嵌套表格的表格名称中使用`.`。你可以任意命名你的表格，只是不要用点，点是保留的。
-```toml
+```yml
     [dog.tater]
     type = "pug"
 ```
 以上等价于如下的 JSON 结构：
-```toml
+```yml
     { "dog": { "tater": { "type": "pug" } } }
 ```
 如果你不想的话，你不用声明所有的父表。TOML　知道该如何处理。
-```toml
+```yml
 # [x.y] 不需要
 # [x.y.z] 这些
 [x.y.z.w] # 可以直接写
 ```
-```toml
+```yml
     # [x] 你
     # [x.y] 不需要
     # [x.y.z] 这些
@@ -225,7 +225,7 @@ TOML 是大小写敏感的。
 空表是允许的，其中没有键值对。
 
 只要父表没有被直接定义，而且没有定义一个特定的键，你可以继续写入：
-```toml
+```yml
 
 [a]
 d = 2
@@ -252,7 +252,7 @@ d = 2
     [a]
     c = 2
     
-```toml
+```yml
     [a]
     b = 1
     
@@ -271,7 +271,7 @@ d = 2
 ## 表格数组
 
 最后要介绍的类型是表格数组。表格数组可以通过包裹在双方括号内的表格名来表达。使用相同的双方括号名称的表格是同一个数组的元素。表格按照书写的顺序插入。双方括号表格如果没有键值对，会被当成空表。
-```toml
+```yml
 
 [[products]]
 
@@ -280,7 +280,7 @@ name = "Nail"
 sku = 284758393
 color = "gray"
 ```
-```toml
+```yml
 
     [[products]]
     name = "Hammer"
@@ -294,7 +294,7 @@ color = "gray"
     color = "gray"
 ```
 等价于以下的　JSON 结构：
-```toml
+```yml
 
   "products": [
     { "name": "Hammer", "sku": 738594937 },
