@@ -104,12 +104,10 @@ TOML 是大小写敏感的。
 注释以引号包裹，里面的字符必须是　UTF-8 格式。引号、反斜杠和控制字符（U+0000 到 U+001F）需要转义。
 
 ```yml
-
     "I'm a string. \"You can quote me\". Name\tJos\u00E9\nLocation\tSF."
 ```
 常用的转义序列：
 ```yml
-
 \t     - tab             (U+0009)
 \n     - linefeed        (U+000A)
 \f     - form feed       (U+000C)
