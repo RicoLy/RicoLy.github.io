@@ -47,7 +47,6 @@ public function handle($request, Closure $next)
 
 然后找到`app/Http/Kernel.php`文件中的 `protected $middleware`
 ```php
-
     protected $middleware = [
     \App\Http\Middleware\CheckForMaintenanceMode::class,
     \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
@@ -60,11 +59,13 @@ public function handle($request, Closure $next)
 #### 优点
 - php代码控制,修改方便
 - 中间件使很好的设计模式
+- 可以控制好跨域的来源,控制粒度更高
 
 #### 缺点
 - 执行速度不快
 
 ### nginx配置支持跨域header
+nginx配置`dev.projec.com.conf`
 ```yaml
 server {
         listen 80;
@@ -159,6 +160,7 @@ server {
 
 ## 结束语
 - 支持https的配置你们可自己更具网上教程自己添加
+- 特别使第三种方案可以支持php的其他框架,可以扩展支持`python`,`golang`等语言
 
 ### 参考文档
 - [HTTP访问控制（CORS）](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
