@@ -40,3 +40,7 @@ disqus:
 categories: Golang Raft Python Database Docker Tool
 
 exclude: util config
+
+ga:
+  id: UA-129013660-1
+  url: mojotv.cn
