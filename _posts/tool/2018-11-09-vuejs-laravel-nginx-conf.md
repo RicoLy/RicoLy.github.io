@@ -66,7 +66,7 @@ public function handle($request, Closure $next)
 
 ### nginx配置支持跨域header
 nginx配置`dev.projec.com.conf`
-```yaml
+```go
 server {
         listen 80;
         root /your_lumen_project_dir/public;
@@ -120,7 +120,7 @@ server {
 
 ### nginx配置使web和api在同一个域名下
 nginx配置文件`vuejs_n_lumen.conf`
-```yaml
+```go
 server {
         listen       80;
         server_name  dev.yoursite.com;
