@@ -40,21 +40,23 @@ opcache.file_cache=/php_opcache/opcache_file_cache
 opcache.file_cache_only=0
 opcache.enable=On
 ```
-sudo mkdir
-需要关注的是设置opcache缓存目录`opcache.file_cache=/php_opcache/opcache_file_cache`
+
+`WARNING:`设置opcache缓存目录`opcache.file_cache=/php_opcache/opcache_file_cache`
 
 重启 `php-fpm restart`
 
 ### 2.遍历项目的全部文件,生成opcache 二进制文件
-
+遍历项目脚本
 generate_project_opcache.php 
 ```php
 <?php
+//你的php项目目录
 $yourProjectPath = '/data/php/project_dir';
 opcache_compile_files($yourProjectPath);
 function opcache_compile_files($dir) {
 	foreach(new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir)) as $v) {
 		if(!$v->isDir() && preg_match('%\.php$%', $v->getRealPath())) {
+		    //生成opcache编译文件
 			opcache_compile_file($v->getRealPath());
 			echo $v->getRealPath()."\n";
 		}
@@ -83,7 +85,7 @@ function opcache_compile_files($dir) {
 `opcache.file_cache`用来保护代码逻辑应该还是可以的,
 但不能确保里面定义的量的安全,比如加密密钥.存也可以,但防君子不防小人,门槛高点而已.
 
-[Zend Guard和ionCube加密的PHP脚本可以用DeZender/De-ionCube解密](http://dezender.net/))
-[Java字节码和Android APK可以用Java Decompiler反编译](http://jd.benow.ca/)
-Python脚本可以编译成pyc文件,不过pyc文件也很容易被反编译.
+- [Zend Guard和ionCube加密的PHP脚本可以用DeZender/De-ionCube解密](http://dezender.net/))
+- [Java字节码和Android APK可以用Java Decompiler反编译](http://jd.benow.ca/)
+- Python脚本可以编译成pyc文件,不过pyc文件也很容易被反编译.
 所以包括opcache.file_cache这样的代码保护,也只能防君子不防小人.
