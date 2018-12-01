@@ -4,7 +4,11 @@ layout: base
 
 <article id="post__content">
         <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
+
+    {% include tags.html %}
+<section>
 {{ content }}
+</section>
 </article> <!-- end #post__content -->
 
 {% include share.html %}
