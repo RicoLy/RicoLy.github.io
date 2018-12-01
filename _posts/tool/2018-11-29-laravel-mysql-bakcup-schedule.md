@@ -414,13 +414,6 @@ class MysqlBackupCommand extends Command
  * Copyright (c) 2018.  Https://github.com/dejavuzhou
  */
 
-/**
- * Project venom.
- * User: kewin.cheng
- * Date: 18/10/24
- * Email: chenghongqiang@360.cn
- */
-
 namespace App\Console\Commands;
 
 use App\Utils\MySQLImport;
