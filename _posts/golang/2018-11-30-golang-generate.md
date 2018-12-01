@@ -165,8 +165,7 @@ description: go generate命令是go 1.4版本里面新添加的一个命令，�
     }
 ```
 ## 参考
-
-[1]. [Go学习笔记 附录](http://wiki.jikexueyuan.com/project/the-go-study-notes-fourth-edition/appendix.html)  
-[2]. [Generating code](https://blog.golang.org/generate)  
-[3]. [Go generate: A Proposal](https://docs.google.com/document/d/1SHOA8vZUKwFP0WHg2_qgJsDB3-Wk_6OutAAAlJj1BTk/edit#heading=h.69ca143066hf)  
-[4]. [Generate Go files by processing source](https://golang.org/cmd/go/#hdr-Generate_Go_files_by_processing_source)
+- [Go学习笔记 附录](http://wiki.jikexueyuan.com/project/the-go-study-notes-fourth-edition/appendix.html)  
+- [Generating code](https://blog.golang.org/generate)  
+- [Go generate: A Proposal](https://docs.google.com/document/d/1SHOA8vZUKwFP0WHg2_qgJsDB3-Wk_6OutAAAlJj1BTk/edit#heading=h.69ca143066hf)  
+- [Generate Go files by processing source](https://golang.org/cmd/go/#hdr-Generate_Go_files_by_processing_source)
