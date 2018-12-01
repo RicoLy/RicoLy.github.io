@@ -2,7 +2,7 @@
 layout: post
 title: golang protobuf 教程
 category: Golang
-tags: Golang,Protobuf
+tags: Golang Protobuf
 description: Golang Protobuf RPC
 ---
 
