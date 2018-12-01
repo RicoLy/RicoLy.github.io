@@ -43,7 +43,7 @@ func main() {
 		//if err := util.SpiderHackNews(); err != nil {
 		//	log.Fatal(err)
 		//}
-		if err := util.ParseMarkdownHacknewsByDay(); err != nil {
+		if err := util.ParseMarkdownHacknews(); err != nil {
 			log.Println(err)
 		}
 		
