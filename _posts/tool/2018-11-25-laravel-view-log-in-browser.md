@@ -89,6 +89,7 @@ $router->group(['namespace' => 'Web', 'prefix' => 'web'], function () use ($rout
 });
 
 ```
-
+## 实际效果
+![laravel-logs-view-in-browser](/assets/image/lumen_logs.png)
 ## 致谢
 - [php-scan-files](http://php.net/manual/zh/function.scandir.php)
