@@ -2,7 +2,10 @@
 layout: post
 title: 钉钉机器人订阅百度新闻
 category: Golang
-tags: Golang,Spider
+tags: 
+    - golang
+    - spider
+    - 钉钉
 description: Golang 钉钉机器人
 ---
 

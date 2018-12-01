@@ -1,23 +1,24 @@
+<hr>
 <div class="tags-items">
-    <div class="tags-items-list">
+<div class="tags-items-list">
     {% for tag in site.tags %}
         <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
-    </div>
+</div>
     <hr/>
-    <div class="tags-items-section">
+<div class="tags-items-section">
     {% for tag in site.tags %}
         <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-        <ul class="tags-items-posts">
+<ul class="tags-items-posts">
     {% for post in tag[1] %}
-            <li>
+<li>
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
 {{ post.title }}
 <small class="post-date">{{ post.date | date_to_string }}</small>
-                </a>
-            </li>
+</a>
+</li>
     {% endfor %}
-        </ul>
+</ul>
     {% endfor %}
-    </div>
+</div>
 </div>
