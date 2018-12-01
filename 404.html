@@ -4,7 +4,7 @@ title: 404 Not Found Error
 ---
 
 <article id="post__content">
-    <h1 id="post__title">404 Not Found Error</h1>
+    <h1 id="post__title">文章全部标签</h1>
 </article> <!-- end #post__content -->
 
 
@@ -14,7 +14,7 @@ title: 404 Not Found Error
 <ul class="tags-items-posts">
     {% for post in tag[1] %}
 <li>
-        <a class="post-title" href="{{ site.baseurl }}/tags">
+        <a class="post-title" href="{{ site.baseurl }}{{post.url}}">
 {{ post.title }}
 <small class="post-date">{{ post.date | date_to_string }}</small>
 </a>
