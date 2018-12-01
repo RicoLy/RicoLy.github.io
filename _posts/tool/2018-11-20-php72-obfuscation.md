@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用Opcache扩展混淆PHP7代码比加快运行速度
+title: PHP代码混淆和加速
 category: Tool
 tags: toml
 keywords: PHP7源代码混淆 PHP7 source code obfuscation
