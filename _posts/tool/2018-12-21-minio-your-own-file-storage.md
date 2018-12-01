@@ -63,16 +63,22 @@ minio.exe server D:\Photos
 ```
 ## minio server 命令参数详解
 1. 设置fs储存目录`/home/shared`
- $ minio server /home/shared
 
-2. 制定服务端口IP`192.168.1.101:9000.
- $ minio server --address 192.168.1.101:9000 /home/shared
+ `$ minio server /home/shared`
+
+2. 制定服务端口IP`192.168.1.101:9000`
+
+ `$ minio server --address 192.168.1.101:9000 /home/shared`
 
 3. 设置域名shell域名变量
- $ export MINIO_DOMAIN=mydomain.com
- $ minio server --address mydomain.com:9000 /mnt/export
+
+ `$ export MINIO_DOMAIN=mydomain.com`
+ 
+ `$ minio server --address mydomain.com:9000 /mnt/export`
+ 
 4. 设置配置文件夹`/home/.minio`
- $ minio server --address 192.168.1.101:9000 /home/shared -C /home/.minio
+
+ `$ minio server --address 192.168.1.101:9000 /home/shared -C /home/.minio`
 
 ## 我的内网服务器运行效果
 ### 登陆界面
@@ -81,4 +87,6 @@ minio.exe server D:\Photos
 ![minio_hoem](/assets/image/minio_home.png)
 
 ## Minio相关教程
+- [GitHub-mino]()
+- [官方文档](https://docs.minio.io/cn/)
 - [Minio：一个开源的AWS S3服务器，让你老爷安卓机焕发第二春](https://studygolang.com/articles/10272)
