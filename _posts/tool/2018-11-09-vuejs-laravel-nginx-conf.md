@@ -2,7 +2,7 @@
 layout: post
 title: laravel完美解决(消灭)跨域问题
 category: Tool
-tags: lumen,nginx,laravel,cors
+tags: lumen nginx laravel cors
 keywords: laravel|lumen完美解决(消灭)跨域问题,跨域资源共享(CORS) 是一种机制，它使用额外的 HTTP 头来告诉浏览器  让运行在一个 origin (domain) 上的Web应用被准许访问来自不同源服务器上的指定的资源。
 ---
 

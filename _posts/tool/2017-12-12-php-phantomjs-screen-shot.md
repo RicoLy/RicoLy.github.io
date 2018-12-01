@@ -2,7 +2,9 @@
 layout: post
 title: php调用phantomJS截图
 category: Tool
-tags: Javascript,PhantomJS
+tags: 
+    -Javascript
+    -PhantomJS
 keywords: php,linux,phantomjs,js
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  kubernetes入门
 category: Docker
-tags: docker,kubernetes
+tags: docker kubernetes
 description: Kubernetes是什么,为什么要用Kubernetes,Kubernetes基本概念和术语
 ---
 

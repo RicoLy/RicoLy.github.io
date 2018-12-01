@@ -2,7 +2,7 @@
 layout: post
 title: 在golang中使用proto gRPC
 category: Golang
-tags: Golang,RPC,Protobuf, gRPC
+tags: Golang RPC Protobuf gRPC
 description: Golang gRPC RPC protobuf
 ---
 

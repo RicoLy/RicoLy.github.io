@@ -2,7 +2,7 @@
 layout: post
 title: 创建自己的FileStorage(网盘)
 category: Tool
-tags: FS,S3,OSS
+tags: FS S3 OSS
 keywords: filestorage,fs,minio,S3,OSS
 description: Minio是一个云原生的应用程序，旨在在多租户环境中以可持续的方式进行扩展。Orchestration平台为Minio的扩展提供了非常好的支撑。以下是各种orchestration平台的Minio部署文档.
 ---
