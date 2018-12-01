@@ -2,7 +2,7 @@
 layout: post
 title: gitbook安装使用教程
 category: Tool
-tags: Nginx, gitbook, node, npm, github, pages
+tags: Nginx gitbook node npm github pages
 keywords: gitbook 安装使用教程,node,npm
 ---
 
