@@ -15,6 +15,7 @@ description: 为laravel/lumen添加mysql定时备份任务
 
 ## 依赖类
 - 备份MYSQL`app/Utils/MySQLDump.php`
+
 ```php
 <?php
 
@@ -241,6 +242,7 @@ class MySQLDump
 ```
 
 - 恢复MYSQL`app/Utils/MySQLImport.php`
+
 ```php
 <?php
 namespace App\Utils;
@@ -349,6 +351,7 @@ class MySQLImport
 ```
 ### 业务代码实现
 - 备份artisan命令`php artisan mysql:backup` 文件名`app/Console/Commands/MysqlBackupCommand.php`
+
 ```php
 <?php
 /**
@@ -404,6 +407,7 @@ class MysqlBackupCommand extends Command
 }
 ```
 - 恢复mysql命令`php artisan mysql:restore` 文件名`app/Console/Commands/MysqlRestoreCommand.php`
+
 ```php
 <?php
 /**
@@ -497,6 +501,7 @@ class MysqlRestoreCommand extends Command
 }
 ```
 - 添加定时任务`app/Console/Kernel.php`
+
 ```php
 <?php
 
@@ -535,7 +540,6 @@ class Kernel extends ConsoleKernel
 }
 
 ```
-
 
 ## 致谢
 - [GitHub-mysqldump-php](https://github.com/ifsnop/mysqldump-php/blob/master/src/Ifsnop/Mysqldump/Mysqldump.php)
