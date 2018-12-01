@@ -6,7 +6,7 @@ tags: Golang
 description: mysql数据库一行命令生成GIN+GORM RESTful APIs Golang应用
 ---
 
-## [MySQL数据库生成RESTful APIs APP](https://github.com/dejavuzhou/ginbro)
+## [MySQL数据库生成RESTful APIs APP](https://github.com/dejavuzhou/post-tag)
 ##### ginbro,**GinBro**,Gimbo,GimBro,**Jimbo**,GinOrm or GinGorm
 ## Feature
 - 自动生成完善的swagger(postman)文档
@@ -130,16 +130,17 @@ go get github.com/jinzhu/gorm
 ## 开发计划
 
 - [ ] 支持PostgreSQL数据库
-- [ ] 支持一键生产jwt密码验证
+- [x] 支持一键生产jwt密码验证
 - [ ] 支持MongoDB数据库
 - [ ] 更具数据映射关联模型
-- [ ] 分页总数做redis缓存
+- [x] 分页总数做redis缓存
 - [ ] 支持生成gRPC服务
-- [ ] 更详细的gorm tag信息
-- [ ] json不现实password等隐私字段
-- [ ] swaggerDoc参数说明继续优化
-- [ ] 生成友好的.gitignore
-- [ ] 完善go doc
+- [x] 更详细的gorm tag信息
+- [x] json不现实password等隐私字段
+- [x] swaggerDoc参数说明继续优化
+- [x] 生成友好的.gitignore
+- [x] 完善go doc
+- [x] [CI/CD travis](https://travis-ci.org/dejavuzhou/ginbro)
 - [ ] 支持其他语言框架(php-laravel/lumne ,python flask ...)
 
 ## 注意
