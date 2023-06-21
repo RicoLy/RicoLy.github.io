@@ -1,25 +1,7 @@
 ---
-layout: base
-title: 404 Not Found Error
+layout: default
 ---
-
-<article id="post__content">
-    <h1 id="post__title">文章全部标签</h1>
-</article> <!-- end #post__content -->
-
-
-<div class="tags-items-section">
-    {% for tag in site.tags %}
-        <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-<ul class="tags-items-posts">
-    {% for post in tag[1] %}
-<li>
-        <a class="post-title" href="{{ site.baseurl }}{{post.url}}">
-{{ post.title }}
-<small class="post-date">{{ post.date | date_to_string }}</small>
-</a>
-</li>
-    {% endfor %}
-</ul>
-    {% endfor %}
+<div id="not-found" class="container">
+  <h1>抱歉，文章不存在</h1>
+  <p>欢迎阅读其他文章</p>
 </div>

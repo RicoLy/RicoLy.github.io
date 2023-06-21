@@ -2,7 +2,9 @@ _site/
 _drafts/
 .DS_Store
 .idea/
-config/*.go
-config/env.go
-dejavuzhou.github.io.exe
-dejavuzhou.github.io
+.sass-cache
+Gemfile
+Gemfile.lock
+_posts/.MWebMetaData/
+.jekyll-metadata
+start
