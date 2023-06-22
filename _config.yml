@@ -9,11 +9,14 @@ sass:
 author:
   name: Rico Ly
   email: rico_ly@163.com
-
+  link: http://captcha.mojotv.cn
+  weibo: http://weibo.com/u/2706451481?is_all=1
+  github: http://github.com/dejavuzhou
 
 # 站点信息
 title: Rico Ly's blog
 description: Awesomeness & Legendery
+url: https://awesome.mojotv.cn
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
@@ -34,7 +37,10 @@ gems:
 disqus:
   shortname: suyan-zh
 
-categories: Golang Raft Python Database Docker Tool CheatSheet
+categories: Golang Raft Python Database Docker Tool
 
+exclude: util config
 
-
+ga:
+  id: UA-129013660-1
+  url: mojotv.cn
