@@ -2,13 +2,12 @@
 layout: post
 title: Go快速入门和查询
 category: CheatSheet
-tags: Go CheatSheet
-keywords: go CheatSheet
+tags: Go
+keywords: go
 description: Go快速入门和查询
 ---
 
-目录
---
+## 目录
 
 1.  [基本语法](#基本语法)
 2.  [运算符](#运算符)
