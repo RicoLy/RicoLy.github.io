@@ -747,9 +747,6 @@ Channels
     }
 
 
-代码片
-===
-
 HTTP 服务器
 --------
 
@@ -777,3 +774,5 @@ HTTP 服务器
     //     ServeHTTP(w http.ResponseWriter, r *http.Request)
     // }
     
+The End
+--------

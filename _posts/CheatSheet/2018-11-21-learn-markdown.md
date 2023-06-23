@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Markdown简明语法教程
-category: Tool
-tags: Markdown
+category: CheatSheet
+tags: CheatSheet Markdown
 keywords: Markdown,教程
 description: Markdown简明语法教程
 ---
