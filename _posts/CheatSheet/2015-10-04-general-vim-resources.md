@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vim 常用资源
-category: Tool
+title: Vim 常用命令
+category: CheatSheet
 tags: Vim
 keywords: Vim
 ---
