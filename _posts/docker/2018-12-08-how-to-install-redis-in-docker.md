@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Docker教程07:Docker中安装Redis实例
+title:  Docker教程07:Docker安装Redis
 category: Docker
 tags: docker
-description: Docker教程07:Docker中安装Redis实例
+description: Docker教程07:Docker安装Redis
 ---
 
 1\. Docker安装Redis方法一:docker pull redis:3.2

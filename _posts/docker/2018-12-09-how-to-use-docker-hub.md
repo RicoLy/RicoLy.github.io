@@ -73,7 +73,7 @@ Docker通过`docer search,pull,login`和`push`等命令提供了连接Docker Hub
 Docker Hub特征
 ------------
 
-让我们再进一步看看[Docker Hub的特色](http://wiki.jikexueyuan.com/project/docker/userguide/dockerrepos.html),这里您可以看到更多的信息.
+让我们再进一步看看[Docker Hub的特色](http://wiki.jikexueyuan.com/project/docker/userguide/dockerrepos.html) ,这里您可以看到更多的信息.
 
 *   私有仓库
 *   组织和团队
@@ -81,7 +81,7 @@ Docker Hub特征
 *   Webhooks
 *   私有仓库
 
-有时候您不想公开或者分享您的镜像,所以Docker Hub允许您有私有仓库,您可以在[这里登录](https://hub.docker.com/)设置它.
+有时候您不想公开或者分享您的镜像,所以Docker Hub允许您有私有仓库,您可以在[这里登录](https://hub.docker.com/) 设置它.
 
 ### 组织和机构
 
