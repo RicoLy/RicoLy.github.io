@@ -69,8 +69,8 @@ import (
 	"os"
 	"log"
 )
-//返回值结构体
-//需要满足以上要求
+// 返回值结构体
+// 需要满足以上要求
 type Response struct {
 	Country   string
 	Province  string
@@ -84,16 +84,16 @@ type Response struct {
 type Ip2addr struct {
 	db *geoip2.Reader
 }
-//参数结构体
-//需要满足以上要求
+// 参数结构体
+// 需要满足以上要求
 type Agrs struct {
 	IpString string
 }
-//json rpc 处理请求
-//需要满足以上要求
+// json rpc 处理请求
+// 需要满足以上要求
 func (t *Ip2addr) Address(agr *Agrs, res *Response) error {
 	netIp := net.ParseIP(agr.IpString)
-        //调用开源geoIp 数据库查询ip地址
+        // 调用开源geoIp 数据库查询ip地址
 	record, err := t.db.City(netIp)
 	res.City = record.City.Names["zh-CN"]
 	res.Province = record.Subdivisions[0].Names["zh-CN"]
@@ -105,16 +105,16 @@ func (t *Ip2addr) Address(agr *Agrs, res *Response) error {
 }
 
 func main() {
-         //加载geoIp数据库
+         // 加载geoIp数据库
 	db, err := geoip2.Open("./GeoLite2-City.mmdb")
 	if err != nil {
 		log.Fatal(err)
 	}
-        //初始化jsonRPC
+        // 初始化jsonRPC
 	ip2addr := &Ip2addr{db}
-       //注册
+       // 注册
 	rpc.Register(ip2addr)
-       //绑定端口
+       // 绑定端口
 	address := ":3344"
 	tcpAddr, err := net.ResolveTCPAddr("tcp", address)
 	checkError(err)
@@ -139,65 +139,7 @@ func checkError(err error) {
 }
 
 ```
-### PHP-jsonRPC客户端
 
-```go
-
-
-class JsonRPC
-{
-    public $conn;
-
-    function __construct($host, $port)
-    {
-        $this->conn = fsockopen($host, $port, $errno, $errstr, 3);
-        if (!$this->conn) {
-            return false;
-        }
-    }
-
-    public function Call($method, $params)
-    {
-        $obj = new stdClass();
-        $obj->code = 0;
-
-        if (!$this->conn) {
-            $obj->info = "jsonRPC连接失败!请联系";
-            return $obj;
-        }
-        $err = fwrite($this->conn, json_encode(array(
-                'method' => $method,
-                'params' => array($params),
-                'id' => 0,
-            )) . "\n");
-        if ($err === false) {
-            fclose($this->conn);
-            $obj->info = "jsonRPC发送参数失败!请检查自己的rpc-client代码";
-            return $obj;
-        }
-
-        stream_set_timeout($this->conn, 0, 3000);
-        $line = fgets($this->conn);
-        fclose($this->conn);
-        if ($line === false) {
-            $obj->info = "jsonRPC返回消息为空!请检查自己的rpc-client代码";
-            return $obj;
-        }
-        $temp = json_decode($line);
-        $obj->code = $temp->error == null ? 1 : 0;
-        $obj->data = $temp->result;
-        return $obj;
-    }
-}
-
-
-function json_rpc_ip_address($ipString)
-{
-    $client = new JsonRPC("127.0.0.1", 3344);
-    $obj = $client->Call("Ip2addr.Address", ['IpString' => $ipString]);
-    return $obj;
-}
-```
 ### go语言jsonRPC客户端
 ```go
 package main
@@ -235,5 +177,3 @@ func main() {
 
 }
 ```
-### [代码地址](https://github.com/mojocn/ip2location/tree/master/example)
-### [欢迎pr/star golang-captcha](https://github.com/mojocn/base64Captcha)

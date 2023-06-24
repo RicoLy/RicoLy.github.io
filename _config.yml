@@ -37,7 +37,7 @@ gems:
 disqus:
   shortname: suyan-zh
 
-categories: Golang Raft Python Database Docker Tool CheatSheet
+categories: Golang Python Database Docker Tool CheatSheet
 
 exclude: util config
 

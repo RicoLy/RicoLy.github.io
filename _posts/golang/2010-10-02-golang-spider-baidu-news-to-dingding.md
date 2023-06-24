@@ -170,8 +170,3 @@ nohup ./main &
 ```
 最终效果
 ![dingding-webhook-bot](http://img.trytv.org/bot.png)
-
-## 7 最后
-* 欢迎star我的[golang-base64captcha开源项目](https://github.com/mojocn/base64Captcha)
-* 如有疑问欢迎email:dejavuzhou@qq.com 
-* 或者 comment [github gist](https://gist.github.com/mojocn/43b47e8d97abb1e00fd19b2864f053c1)

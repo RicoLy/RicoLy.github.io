@@ -8,7 +8,7 @@ keywords: http RESTful APIs 设计指南
 
 ## 前言
 
-这篇指南介绍描述了 HTTP+JSON API 的一种设计模式，最初摘录整理自 Heroku 平台的 API 设计指引 [Heroku 平台 API 指引](https://devcenter.heroku.com/articles/platform-api-reference)。
+这篇指南介绍描述了 HTTP+JSON API 的一种设计模式，最初摘录整理自 Heroku 平台的 API 设计指引 [Heroku 平台 API 指引](https://devcenter.heroku.com/articles/platform-api-reference) 。
 
 这篇指南除了详细介绍现有的 API 外，Heroku 将来新加入的内部 API 也会符合这种设计模式，我们希望非 Heroku 员工的API设计者也能感兴趣。
 
@@ -16,7 +16,7 @@ keywords: http RESTful APIs 设计指南
 
 我们假设你熟悉基本的 HTTP+JSON API 设计方法，所以本篇指南并不包含所有的 API 设计基础。
 
-我们欢迎你为这篇指南做[贡献](https://github.com/interagent/http-api-design/blob/master/CONTRIBUTING.md)。
+我们欢迎你为这篇指南做[贡献](https://github.com/interagent/http-api-design/blob/master/CONTRIBUTING.md) 。
 
 ## 目录
 
