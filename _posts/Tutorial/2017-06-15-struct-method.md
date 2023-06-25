@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:15-struct-method结构体和方法
 ---
 
-![Go教程:15-struct-method结构体和方法](/assets/image/golang_struct.jpg)
+![Go教程:15-struct-method结构体和方法](/assets/image/golang_struct.jpg#pic_center)
 
 1\. struct 结构体
 --------------

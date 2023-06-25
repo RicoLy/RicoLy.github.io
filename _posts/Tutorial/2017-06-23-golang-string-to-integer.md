@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:23 string转换int类型方法对比
 ---
 
-![Go教程:23 string转换int类型方法对比](/assets/image/golang_fight.png)
+![Go教程:23 string转换int类型方法对比](/assets/image/golang_fight.png#pic_center)
 
 Go语言时一个强类型的语言,但是强类型的语言有也强类型的语言的烦恼.这个烦恼就是类型转换, 接下来我们就讲解一下怎么把 string 类型变量转换成 integer 类型变量.
 

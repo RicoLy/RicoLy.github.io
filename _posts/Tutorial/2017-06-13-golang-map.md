@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:13-map字典
 ---
 
-![Go教程:13-map字典](/assets/image/golang_map.png)
+![Go教程:13-map字典](/assets/image/golang_map.png#pic_center)
 
 map 是一种特殊的数据结构：一种元素对（pair）的无序集合,pair 的一个元素是 key,对应的另一个元素是 value,所以这个结构也称为关联数组或字典.这是一种快速寻找值的理想结构：给定 key,对应的 value 可以迅速定位.
 

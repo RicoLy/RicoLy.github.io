@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:14-array-slice-list区别和场景
 ---
 
-![Go教程:14-array-slice-list区别和场景](/assets/image/golang_list.png)
+![Go教程:14-array-slice-list区别和场景](/assets/image/golang_list.png#pic_center)
 
 array 和 slice 看似相似,却有着极大的不同,但他们之间还有着千次万缕的联系 slice 是引用类型,是 array 的引用,相当于动态数组, 这些都是 slice 的特性,但是 slice 底层如何表现,内存中是如何分配的,特别是在程序中大量使用 slice 的情况下,怎样可以高效使用 slice？ 今天借助 Go 的 unsafe 包来探索 array 和 slice 的各种奥妙
 

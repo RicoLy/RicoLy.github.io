@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:25 Go初始化init函数
 ---
 
-![Go教程:25 Go初始化init函数](/assets/image/golang_init_function.jpeg)
+![Go教程:25 Go初始化init函数](/assets/image/golang_init_function.jpeg#pic_center)
 
 1\. 什么是Go语言init函数
 -----------------
@@ -34,7 +34,7 @@ description: Go教程:25 Go初始化init函数
 2\. init函数在go语言中执行的顺序
 ---------------------
 
-![](/assets/image/golang_init_function_exec_order.png)
+![](/assets/image/golang_init_function_exec_order.png#pic_center)
 
 为了使用导入的包,首先必须将其初始化. 初始化总是以单线程执行,并且按照包的依赖关系顺序执行.这通过Golang的运行时系统控制. 正如上图所示:
 

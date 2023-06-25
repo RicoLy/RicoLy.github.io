@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:10-array数组
 ---
 
-![Go教程:10-array数组](/assets/image/golang_array.png)
+![Go教程:10-array数组](/assets/image/golang_array.png#pic_center)
 
 数组是具有相同 唯一类型 的一组已编号且长度固定的数据项序列（这是一种同构的数据结构）; 这种类型可以是任意的原始类型例如整型,字符串或者自定义类型.数组长度必须是一个常量表达式,并且必须是一个非负整数.
 

@@ -7,7 +7,7 @@ description: Go教程:07-控制结构for循环loop
 ---
 
 
-![Go教程:07-控制结构for循环loop](/assets/image/golang_for_loop.png)
+![Go教程:07-控制结构for循环loop](/assets/image/golang_for_loop.png#pic_center)
 
 for循环是编程语言中一种循环语句,而循环语句由循环体及循环的判定条件两部分组成,其表达式为：for（单次表达式;条件表达式;末尾循环体）{中间循环体;}. 循环语句是用来重复执行某一段代码.
 
@@ -137,7 +137,7 @@ goto 语句通常与条件语句配合使用.可用来实现条件转移, 构成
 
 示意图
 
-![golang_goto](/assets/image/golang_goto.jpg)
+![golang_goto](/assets/image/golang_goto.jpg#pic_center)
 
 在变量 a 等于 15 的时候跳过本次循环并回到循环的开始语句 LOOP 处：
 

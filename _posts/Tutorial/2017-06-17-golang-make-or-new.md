@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:17-make和new的区别
 ---
 
-![Go教程:17-make和new的区别](/assets/image/golang_make_new_coverage.png)
+![Go教程:17-make和new的区别](/assets/image/golang_make_new_coverage.png#pic_center)
 
 Go 语言中的 new 和 make 一直是新手比较容易混淆的东西, 咋一看很相似.不过解释两者之间的不同也非常容易. 他们所做的事情,和应用的类型也不相同. 二者都是用来分配空间.
 
@@ -39,7 +39,7 @@ make(T, args) 返回的是初始化之后的 T 类型的值,这个新值并不�
 
 下图给出了区别：
 
-![new和make的区别](/assets/image/golang_make_new.webp)
+![new和make的区别](/assets/image/golang_make_new.webp#pic_center)
 
 new和make区别代码:
 

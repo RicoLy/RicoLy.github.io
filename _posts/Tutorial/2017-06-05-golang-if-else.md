@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:05-控制结构if-else
 ---
 
-![Go教程:05-控制结构if-else](/assets/image/golang_if_else.jpg)
+![Go教程:05-控制结构if-else](/assets/image/golang_if_else.jpg#pic_center)
 
 1.if语法样式
 --------

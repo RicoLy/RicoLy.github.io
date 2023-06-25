@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:24 Go协程Goroutines
 ---
 
-![Go教程:24 Go协程Goroutines](/assets/image/goroutine.jpg)
+![Go教程:24 Go协程Goroutines](/assets/image/goroutine.jpg#pic_center)
 
 1\. 什么是 Go Goroutines?
 ----------------------

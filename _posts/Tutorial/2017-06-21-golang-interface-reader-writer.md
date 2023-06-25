@@ -7,7 +7,7 @@ description: Go教程:21-io.Reader/Writer详解
 ---
 
 
-![io.Reader/Writer详解](/assets/pic/c2dtZl8vaW1nL2JWYmR6amE_dz0xNjAwJmg9MjE0.jpg)
+![io.Reader/Writer详解](/assets/image/c2dtZl8vaW1nL2JWYmR6amE_dz0xNjAwJmg9MjE0.jpg#pic_center)
 
 I/O操作也叫输入输出操作.其中I是指Input,O是指Output,用于读或者写数据的,有些语言中也叫流操作,是指数据通信的通道. Golang 标准库对 IO 的抽象非常精巧,各个组件可以随意组合,可以作为接口设计的典范.
 
@@ -37,7 +37,7 @@ Go原生的pkg中有一些核心的interface,其中io.Reader/Writer是比较常�
 *   bytes.Buffer: 把\[\]byte抽象成Reader和Writer
 *   bufio.Reader/Writer: 抽象成带缓冲的流读取（比如按行读写）
 
-![](/assets/image/golang_reader_writer.webp)
+![](/assets/image/golang_reader_writer.webp#pic_center)
 
 2\. io.Reader/Writer使用场景
 ------------------------

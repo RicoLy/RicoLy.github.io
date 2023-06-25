@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:19-文件路径filepath
 ---
 
-![Go教程:19-文件路径filepath](/assets/image/golang_package.jpg)
+![Go教程:19-文件路径filepath](/assets/image/golang_package.jpg#pic_center)
 
 [path/filepath](https://golang.google.cn/pkg/path/filepath/) 包涉及到路径操作时,路径分隔符使用 os.PathSeparator. Go是一个跨平台的语言,不同系统,路径表示方式有所不同,比如 Unix 和 Windows 差别很大.本包能够处理所有的文件路径,不管是什么系统.
 

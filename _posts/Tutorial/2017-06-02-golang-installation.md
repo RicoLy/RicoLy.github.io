@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:02-Go环境安装
 ---
 
-<div style="text-align: center;">![Go教程:01-什么是Go语言](/assets/image/golang_tutorial_coverage.jpg)</div>
+![Go教程:01-什么是Go语言](/assets/image/golang_tutorial_coverage.jpg#pic_center)
 
 Go语言windows/.macOS/linux/raspberryPi开发环境安装是编程的第一步,也是最简单的. 现在我们就就开始安装最新的go语言开发环境.这篇文章的时候go版本号`1.12.9` [最新的下载页面](https://golang.google.cn/dl/)
 

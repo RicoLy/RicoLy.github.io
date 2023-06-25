@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:20-interface接口
 ---
 
-![Go教程:20-interface接口](/assets/image/golang_interface.jpg)
+![Go教程:20-interface接口](/assets/image/golang_interface.jpg#pic_center)
 
 1\. 什么是interface
 ----------------

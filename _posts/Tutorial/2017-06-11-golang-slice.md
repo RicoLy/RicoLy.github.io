@@ -7,7 +7,7 @@ description: Go教程:11-slice切片
 ---
 
 
-![Go教程:11-slice切片](/assets/image/golang_slice.png)
+![Go教程:11-slice切片](/assets/image/golang_slice.png#pic_center)
 
 Go 语言切片是对数组的抽象. Go 数组的长度不可改变,在特定场景中这样的集合就不太适用, Go中提供了一种灵活,功能强悍的内置类型切片(“动态数组”),与数组相比切片的长度是不固定的,可以追加元素,在追加时可能使切片的容量增大.
 
@@ -79,7 +79,7 @@ make 的使用方式是：`func make([]T, len, cap)`,其中 cap 是可选参数.
 
 
 下图描述了使用 make 方法生成的切片的内存结构：
-![](/assets/image/new-slice.png)
+![](/assets/image/new-slice.png#pic_center)
 
 示例 7.8
 

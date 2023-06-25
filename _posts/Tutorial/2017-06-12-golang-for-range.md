@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:12-for-range循环迭代
 ---
 
-![Go教程:12-for-range循环迭代](/assets/image/golang_range.jpg)
+![Go教程:12-for-range循环迭代](/assets/image/golang_range.jpg#pic_center)
 
 range 关键字用来遍历 list,array 或者 map.为了方便理解,可以认为 range 等效于 for earch index of. 对于 arrays 或者 slices, 将会返回整型的下标;对于 map,将会返回下一个键值对的 key. 支持返回单值或者两个值, 如果返回一个值,那么为下标,否则为下标和下标所对应的值.
 

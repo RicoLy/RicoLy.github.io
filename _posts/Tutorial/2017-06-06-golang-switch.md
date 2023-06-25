@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:06-控制结构switch
 ---
 
-![Go教程:06-控制结构switch](/assets/image/golang_switch.jpg)
+![Go教程:06-控制结构switch](/assets/image/golang_switch.jpg#pic_center)
 
 switch 是一个条件语句,用于将一个表达式的求值结果与可能的值的列表进行匹配,并根据匹配结果执行相应的代码.可以认为 switch 语句是编写多个 if-else 子句的替代方式. 比较 C 和 Java 等其它语言而言,Go 语言中的 switch 结构使用上更加灵活.它接受任意形式的表达式：
 

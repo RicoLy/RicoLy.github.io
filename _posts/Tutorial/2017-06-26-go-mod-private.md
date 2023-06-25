@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:26 Go mod 使用私有仓库构建
 ---
 
-![Go教程:26 Go mod 使用私有仓库构建](/assets/image/go_mod_private_repo.png)
+![Go教程:26 Go mod 使用私有仓库构建](/assets/image/go_mod_private_repo.png#pic_center)
 
 1\. go mod
 ----------

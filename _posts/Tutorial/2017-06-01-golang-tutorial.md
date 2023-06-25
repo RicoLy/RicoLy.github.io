@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:01-什么是Go语言
 ---
 
-<div style="text-align: center;">![Go教程:01-什么是Go语言](/assets/image/golang_tutorial_coverage.jpg)</div>
+![Go教程:01-什么是Go语言](/assets/image/golang_tutorial_coverage.jpg#pic_center)
 
 1.Go语言是什么?
 ----------

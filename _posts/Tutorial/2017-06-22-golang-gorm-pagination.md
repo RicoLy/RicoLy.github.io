@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:22 RESTful-Gorm-Gin分页搜索最佳实践
 ---
 
-![Go教程:22 RESTful-Gorm-Gin分页搜索最佳实践](/assets/image/pagination_search.png)
+![Go教程:22 RESTful-Gorm-Gin分页搜索最佳实践](/assets/image/pagination_search.png#pic_center)
 
 API处理分页看似简单,实际上暗藏危机.最常见的分页方式,大概是下面这样的
 
@@ -91,7 +91,7 @@ API处理分页看似简单,实际上暗藏危机.最常见的分页方式,大�
     }
 
 
-这个结构体是提供给gin handler用作参数绑定的. 使用的方法如下: [ssh2ws/internal/h\_ssh\_log.go](https://github.com/libragen/felix/blob/master/ssh2ws/internal/h_ssh_log.go)
+这个结构体是提供给gin handler用作参数绑定的. 使用的方法如下: 
 
     func SshLogAll(c *gin.Context) {
     	query := &model.SshLogQ{}

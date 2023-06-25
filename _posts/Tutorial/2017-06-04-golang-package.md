@@ -7,7 +7,7 @@ description: Go教程:04-包package和import
 ---
 
 
-![Go教程:04-包package和import](/assets/image/golang_package.jpg)
+![Go教程:04-包package和import](/assets/image/golang_package.jpg#pic_center)
 
 1.什么是package
 ------------

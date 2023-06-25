@@ -6,7 +6,7 @@ tags: Golang Tutorial
 description: Go教程:18-error异常处理
 ---
 
-![Go教程:18-error异常处理](/assets/image/golang_error_handle.png)
+![Go教程:18-error异常处理](/assets/image/golang_error_handle.png#pic_center)
 
 Go是一门simple language,常拿出来鼓吹的就是作为gopher习以为傲的仅仅25个关键字.因此Go的错误处理也一如既往的简单. Go则继承了C,以返回值为错误处理的主要方式（辅以panic与recover应对runtime异常）. 但与C不同的是,在Go的惯用法中,返回值不是整型等常用返回值类型,而是用了一个 error(interface类型).
 
