@@ -6,9 +6,6 @@ tags: Golang
 description: Go进阶03:处理并发错误
 ---
 
-处理并发错误
-======
-
 recover goroutine中的panic
 ------------------------
 

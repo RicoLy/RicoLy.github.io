@@ -35,5 +35,5 @@ keywords: 编程助手
 ### `javascript`
 - `webstorm`
 
-### `PHP`
-- `PHPstorm`
+### `Java`
+- `IDEA`
