@@ -1,4 +1,10 @@
-## 目标
+---
+layout: post
+title: go-zero使用教程
+category: Golang
+tags: Golang go-zero
+description: HTTP断点续传多线程下载原理
+---
 
 为什么使用go-zero
 ============
